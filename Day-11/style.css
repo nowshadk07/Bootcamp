@@ -1,0 +1,22 @@
+body{
+    padding: 50px;
+}
+.topbox{
+    background-color: skyblue;
+    width: 300px;
+    border: 15px solid brown;
+    padding: 50px;
+    margin: 20px;
+}
+.bottombox{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+.secondLast{
+    display: block;
+}
+.last{
+    display: block;
+    color: blueviolet;
+}
