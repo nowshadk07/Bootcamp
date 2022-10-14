@@ -1,0 +1,96 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+}
+header{
+    background-color: #87A2FB;
+    color: white;
+    height: 5rem;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    padding-left: 20px; 
+    font-size: 54px;
+}
+.li{
+    background-color: #33b5e5;
+    color: white;
+    margin: 20px 0;
+    height: 3.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+section{
+    display: flex;
+    align-items: top;
+    margin: 10px;
+    height: 76vh;
+}
+.list{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+.text{
+    display:inline-block;
+    width: 45%;
+    margin: 30px;
+    font-size: x-large;  
+}
+.text h1{
+    margin-top: 5px;
+}
+
+
+.books{
+    display: flex;
+    background-color: #B1B2FF;
+    margin-top :30px;
+    width: 30%; 
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border-radius: 5px;
+}
+.text-books{
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0099cc;
+    height: 5rem;
+    color: white;
+}
+
+@media screen and (min-width:420px) and (max-width:1000px) {
+    section{
+        display:block;
+        height: auto;
+    }
+    .books{
+        width: 100%;
+    }   
+}
+@media screen and (max-width:700px) {
+    section{
+        flex-direction: column;
+        height: auto;
+    }
+    .list, .text, .books{
+        width: 100%;
+        
+    } 
+    .text{
+        margin: auto;
+    }
+}
