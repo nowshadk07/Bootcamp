@@ -1,0 +1,311 @@
+/* -------------------importing font--------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Sofia&display=swap');
+
+/* -------------------declaring variables--------------- */
+:root {
+    --dark: rgb(25, 39, 52);
+    --dark2: rgb(22, 32, 42);
+    --green: rgb(95, 107, 85);
+    --green2: rgb(41, 47, 37);
+    --purple: rgb(96, 67, 108);
+    --purple2: rgb(43, 32, 48);
+    --cream:rgb(240, 234, 216);
+}
+
+/*----Style for theme selector page--------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+
+.theme-selector-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.theme-selector-page .left {
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.theme-selector-page .left img {
+    width: 300px;
+    height: 300px;
+}
+
+.theme-selector-page .left button {
+    box-sizing: content-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
+    display: block;
+}
+
+.theme-selector-page .left button:nth-of-type(2) {
+    background-color: rgb(25, 39, 52)
+}
+
+.theme-selector-page .left button:nth-of-type(3) {
+    background-color: rgb(95, 107, 85)
+}
+
+.theme-selector-page .left button:nth-of-type(4) {
+    background-color: rgb(96, 67, 108)
+}
+
+.theme-selector-page .left button:hover,
+.theme-selector-page .left button:active {
+    border-width: 3px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.right {
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+    background-color: lightblue;
+}
+
+.right .item1 {
+    width: 400px;
+    height: 270px;
+    background-color:var(--cream);
+}
+
+.right .item2 {
+    width: 400px;
+    height: 270px;
+    opacity: 0.5;
+}
+
+.right .text {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.right .item2Container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 2px solid cyan;
+}
+
+
+
+/* ------CSS for changing colour---------------- */
+/* ---staring dark page------- */
+body.dark {
+    background-color: rgb(25, 39, 52);
+    color: white;
+}
+
+body.dark .theme-selector-page .left button {
+    border-color: white;
+}
+
+body.dark .list {
+    background-color: var(--dark2)
+}
+body.dark .right .item1{
+    background-color: var(--dark2);
+}
+body.dark .form-div {
+    background-color: var(--dark2);
+}
+/* ------Starting Green page------- */
+body.green {
+    background-color: rgb(95, 107, 85);
+}
+
+body.green .list {
+    background-color: var(--green2)
+}
+body.green .right .item1{
+    background-color: var(--green2);
+}
+body.green .form-div {
+    background-color: var(--green2);
+}
+/* ------Starting Purple page------- */
+body.purple {
+    background-color: rgb(70, 52, 78);
+}
+
+body.purple .list {
+    background-color: var(--purple2);
+}
+body.purple .right .item1{
+    background-color: var(--purple2);
+}
+body.purple .form-div {
+    background-color: var(--purple2);
+}
+
+
+
+/* --------for the main page------------ */
+.set-btn {
+    position: fixed;
+    cursor: pointer;
+    height: 5vh;
+}
+
+.set-btn img {
+    display: block;
+    width: 30px;
+}
+
+
+.page1 {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: lighter;
+}
+
+p {
+    margin-top: 15px;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.page1 .left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 600px;
+}
+
+.list {
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.page1 .right-col img {
+    width: 600px;
+}
+
+.page1 .right-col p,
+.page1 .right-col h1 {
+    text-align: center;
+}
+
+/* ------style for page2---------- */
+.page2 {
+    padding-top: 10%;
+    height: 100vh;
+    display: block;
+}
+
+.page2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.projectList {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.projectItem {
+    width: 350px;
+    background-color: white;
+    color: black;
+    height: 400px;
+}
+
+.projectItem img {
+    width: 350px;
+}
+
+.projectItem h4,
+.projectItem p,
+.projectItem a {
+    margin-left: 10px;
+}
+
+.projectItem p {
+    font-weight: lighter;
+}
+
+/* ------style for page 3---------------- */
+.page3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.page3 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-div {
+    padding: 20px 10px 10px 10px;
+    width: 700px;
+    background-color: lightblue;
+    border-radius: 13px;
+    border: 2px solid rgb(23, 162, 183);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-div * {
+    margin-bottom: 10px;
+}
+
+.form-div input {
+    border-radius: 5px;
+    height: 40px;
+    border: 2px solid rgb(23, 162, 183);
+}
+
+.form-div textarea {
+    border-radius: 5px;
+    border: 2px solid rgb(23, 162, 183);
+}
+
+.form-div .submit {
+    background-color: rgb(23, 162, 183);
+}

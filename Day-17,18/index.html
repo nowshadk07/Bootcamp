@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body id="body">
+  <div class="theme-selector-page" id="theme-page">
+    <div class="left">
+      <img src="/Untitled(6).jpeg" />
+      <h3>Personalize Theme</h3>
+      <div class="buttons">
+        <button id="white-btn" onclick="goWhite();"></button>
+        <button id="black-btn" onclick="goDark();"></button>
+        <button id="green-btn" onclick="goGreen();"></button>
+        <button id="purple-btn" onclick="goPurple();"></button>
+      </div>
+      <p>*These settings will be saved for your next visit</p>
+    </div>
+    <div class="right">
+      <div id="one" class="item1"></div>
+    <div id="two" class="item2Container">
+      <div class="item2"></div>
+      <div class="text">
+        <h2>What we do</h2>
+        <p>We help developers to understand JavaScript and React in depth. Web dev and design resouces.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <button onclick="settting();" class="set-btn">
+      <a href="#theme-page"><img src="/icons8-settings-100.png" alt="" /></a>
+    </button>
+    <div class="page1">
+      <div class="left-col">
+        <h2>More About me</h2>
+        <p>
+          We build new projects just to tickle my brain and love teaching
+          others how they are made.
+        </p>
+        <p>
+          We help developers to understand JavaScript and React in depth. Web
+          dev and design resouces.
+        </p>
+        <hr />
+        <h1>TOP EXPERTISE</h1>
+        <p>For resouces and E-book: <a href="#">Download</a></p>
+        <div class="list">
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>UI/UX</li>
+            <li>Python</li>
+            <li>Postgres</li>
+          </ul>
+          <ul>
+            <li>Google Maps API</li>
+            <li>JS Charts</li>
+            <li>AWS</li>
+            <li>Heroku</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-col">
+        <img src="/Codemarch.co.jpeg" alt="" />
+        <h1>Find me on Twitter and Youtube</h1>
+        <p>Youtube: <a>@Codemarch</a></p>
+        <p>Twitter: <a>@Codemarch</a></p>
+      </div>
+    </div>
+    <div class="page2">
+      <h2>Some of my past projects</h2>
+      <div class="projectList">
+        <div class="projectItem">
+          <img src="/project2.jpeg" alt="">
+          <h4>UI/UX Treasure book</h4>
+          <p>User interface design or user
+            interface engineering is the
+            design of user interfaces for
+            machines and software, such as
+            computers
+          </p>
+          <a href="#">Download</a>
+
+        </div>
+        <div class="projectItem">
+          <img src="/project1.jpeg" alt="">
+          <h4>JavaScript for Starters: The
+            Complete Guide</h4>
+          <p>JavaScript, often abbreviated to
+            JS, is a prograrnming language that
+            is one of the core technologies of
+            the World Wide Web
+          </p>
+          <a href="#">Download</a>
+
+        </div>
+        <div class="projectItem">
+          <img src="/project3.jpeg" alt="">
+          <h4>Membership Website</h4>
+          <p>React is a free and open-source
+            front-end JavaScript library for
+            building user interfaces based on
+            UI components. It is maintained by
+            Meta and a community.
+          </p>
+          <a href="#">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="page3">
+      <h2>Get in Touch</h2>
+      <div class="form-div">
+        <form action="Name">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="Message">Message</label>
+          <textarea rows="12"></textarea>
+          <input class="submit" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
